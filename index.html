@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport'
+          content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Lectrum LLC</title>
+</head>
+
+<body>
+<script>
+    // Create
+    // (async () => {
+    //     const response = await fetch('https://lab.lectrum.io/examples/api/swagger/customers', {
+    //     // const response = await fetch('http://127.0.0.1:8000/swagger/', {
+    //         method: 'POST',
+    //         headers: {
+    //             authorization: '1qazxsw2',
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify({name: 'Санжар'})
+    //     });
+    //
+    //     if (!response.ok) {
+    //         console.error('Запрос не удался');
+    //         return;
+    //     }
+    //
+    //     const data = await response.json();
+    //     console.log(data);
+    // })();
+    // Create
+
+
+    // Get ALL
+    // (async () => {
+    //     const limit = 10;
+    //     const page = 7;
+    //     const response = await fetch(`https://lab.lectrum.io/examples/api/swagger/customers?limit=${limit}&page=${page}`);
+    //
+    //     if (!response.ok) {
+    //         console.error('Запрос не удался');
+    //         return;
+    //     }
+    //
+    //     const data = await response.json();
+    //     console.log(data);
+    // })();
+    // Get ALL
+
+    // Get by ID
+    // (async () => {
+    //     const userId = '9c290fd9-b163-4e61-a1a4-e9f39e55fc52';
+    //     const response = await fetch(`https://lab.lectrum.io/examples/api/swagger/customers/${userId}`);
+    //
+    //     if (!response.ok) {
+    //         console.error('Запрос не удался');
+    //         return;
+    //     }
+    //
+    //     const data = await response.json();
+    //     console.log(data);
+    // })();
+    // Get by ID
+
+    // Update
+    // (async () => {
+    //     const userId = '9c290fd9-b163-4e61-a1a4-e9f39e55fc52';
+    //     const response = await fetch(`https://lab.lectrum.io/examples/api/swagger/customers/${userId}`, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify({ name: 'Sanjar' })
+    //     });
+    //
+    //     if (!response.ok) {
+    //         console.error('Запрос не удался');
+    //         return;
+    //     }
+    //
+    //     const data = await response.json();
+    //     console.log(data);
+    // })();
+    // Update
+
+    // Delete
+    (async () => {
+        const userId = '9c290fd9-b163-4e61-a1a4-e9f39e55fc52';
+        const response = await fetch(`https://lab.lectrum.io/examples/api/swagger/customers/${userId}`, {
+            method: 'DELETE',
+        });
+
+        if (!response.ok) {
+            console.error('Запрос не удался');
+            return;
+        }
+
+        console.log('Пользователь успешно удалён');
+    })();
+    // Delete
+</script>
+</body>
+
+</html>
